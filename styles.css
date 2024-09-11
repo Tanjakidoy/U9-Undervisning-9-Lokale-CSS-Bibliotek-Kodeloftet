@@ -1,46 +1,85 @@
+/* Varables */
+* {
+  --primaryColor: #1D2025;
+}
+
+/* Gobal */
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+    }
+
+h1 {
+color: #DEF863;
 }
 
-nav {
+h2 {
+  color: #DEF863;
+  }
+
+p {
+  color: #DEF863;
+  }
+
+li {
+  color: #DEF863;
+  }
+
+header {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
-}
+  background-color: var(--primaryColor);
+   }
 
-nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
-  text-align: center;
-  text-decoration: none;
-  color: #555;
-}
-
-nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 16px;
 }
 
 main {
-  padding: 1rem;
+  min-height: 100vh;
+  background-color: #292D32;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primaryColor);
+}
+
+footer > p {
+  margin: 5px 0;
+}
+
+a {
+  color: white;
+}
+
+section {
+  min-height: 50vh;
+}
+
+/* Non-global */
+.flexRowCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
 }
